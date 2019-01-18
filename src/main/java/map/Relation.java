@@ -105,6 +105,8 @@ public class Relation {
 //		}
 
 	}
+	
+//	public static <T> 
 
 	/**
 	 * 通过配置文件生成底层设备，这边我就手动写设备
@@ -113,22 +115,24 @@ public class Relation {
 		// 底层设备生成 返回一个运行时对象
 //		AirCondition gree = (AirCondition) generate(Gree.class.getName());
 //		AirCondition panasonic = (AirCondition) generate(Panasonic.class.getName());
-//
+////
 //		Light midea = (Light) generate(Midea.class.getName());
 //		Light opple = (Light) generate(Opple.class.getName());
-//		
+////		
+		
 		AirCleaner philips=(AirCleaner) generate(Philips.class.getName());
 
 		// 运行时对象调用
 
 //		gree.cool();
 //		panasonic.cool();
-//
+////
 //		midea.illumine();
 //		opple.illumine();
 //		midea.darken();
 //		opple.darken();
-		philips.setPM2_5(20);
+		
+		philips.setPM2_5(30);
 		System.out.println(philips.getPM2_5());
 		
 	}
@@ -159,25 +163,14 @@ public class Relation {
 				
 				String functionType = "";
 				
-			
-				
-				
 				for (Method m : methods) {
 					String temp = m.toString();
 					String[] ff=temp.split("\\.");
 					String[] ff2=ff[2].split("\\(");
-//					System.out.println(ff2[0]);
 					functionType=ff2[0];
-
-					
 //				Method method = runtimeClass.getDeclaredMethod(functionType);
 
-
 				}
-
-//				System.out.println(functionType);
-
-				
 				
 				type.setAccessible(true);
 				type.set(runtimeObj, deviceType);
