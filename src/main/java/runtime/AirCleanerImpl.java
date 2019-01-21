@@ -7,7 +7,7 @@ public class AirCleanerImpl implements AirCleaner{
 	@Override
 	public void purify() {
 		// TODO Auto-generated method stub
-		
+//		PM2_5-=0.5;
 	}
 
 	@Override

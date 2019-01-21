@@ -133,6 +133,7 @@ public class Relation {
 //		opple.darken();
 		
 		philips.setPM2_5(30);
+		philips.purify();
 		System.out.println(philips.getPM2_5());
 		
 	}

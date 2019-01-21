@@ -8,4 +8,8 @@ package runtime;
  **/
 public interface AirCondition {
     void cool();
+    
+	void setT(float temperature);
+	float getT();
+    
 }

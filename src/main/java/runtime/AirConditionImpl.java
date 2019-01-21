@@ -10,10 +10,25 @@ public class AirConditionImpl implements AirCondition {
 
     //空调类型
     private String type;
-
+    private float Temperature ;
 
     @Override
     public void cool() {
+    
 
     }
+
+
+	@Override
+	public void setT(float temperature) {
+		// TODO Auto-generated method stub
+		Temperature=temperature;
+	}
+
+
+	@Override
+	public float getT() {
+		// TODO Auto-generated method stub
+		return Temperature;
+	}
 }
