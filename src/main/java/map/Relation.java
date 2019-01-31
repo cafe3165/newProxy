@@ -131,8 +131,10 @@ public class Relation {
 //		opple.illumine();
 //		midea.darken();
 //		opple.darken();
-		
+	
+
 		philips.setPM2_5(30);
+		System.out.println(philips.getPM2_5());
 		philips.purify();
 		System.out.println(philips.getPM2_5());
 		
