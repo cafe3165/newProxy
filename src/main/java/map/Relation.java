@@ -134,7 +134,6 @@ public class Relation {
 	
 
 		philips.setPM2_5(30);
-		System.out.println(philips.getPM2_5());
 		philips.purify();
 		System.out.println(philips.getPM2_5());
 		
